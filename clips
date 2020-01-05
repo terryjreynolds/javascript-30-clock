@@ -1,0 +1,48 @@
+<div class="container">
+<div class="clock">
+
+    <div class="hand hour">
+
+    </div>
+    <div class="hand min">
+
+    </div>
+    <div class="hand sec">
+
+    </div>
+</div>
+
+/*------------MEDIA QUERIES------------------*/
+@media only screen and (max-width: 769px) {
+  .container {
+    width: 85%;
+  }
+  header {
+    padding-top: 15vw;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  header {
+    padding-top: 2vw;
+  }
+}
+
+border-bottom: solid black 1vh;
+
+  transform: rotate(90deg);
+  transform-origin: top right;
+
+  sec 90/15 = 6 degrees for every one second
+  hour 90/3 = 30 degrees for every hour
+  minute 90/15 = 6 degrees for every minute
+
+1:40:55
+
+55x6 = 330
+
+40
+
+
+
+
+

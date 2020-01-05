@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  color: white;
+  font-family: "Acme", sans-serif;
+  background-image: url("photos/space.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  margin-top: 3%;
+  font-size: larger;
+  color: whitesmoke;
+}
+
+.clock {
+  position: relative;
+  margin: 8% auto;
+  height: 40vh;
+  width: 40vh;
+  border: 10px solid black;
+  background-color: aliceblue;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+#hour {
+  position: relative;
+  top: 50%;
+  left: 15%;
+  width: 35%;
+  z-index: 2;
+  border-top: 4px solid black;
+  transform: rotate(90deg);
+  transform-origin: right center;
+}
+
+#min {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 1;
+  width: 45%;
+  border-top: 4px solid black;
+  transform: rotate(90deg);
+  transform-origin: right center;
+}
+#sec {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 0;
+  width: 48%;
+  border-top: 4px solid red;
+  transform: rotate(90deg);
+  transform-origin: right center;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.twelve {
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+.nine {
+  position: absolute;
+  top: 47%;
+  padding-left: 3%;
+  text-align: left;
+  color: black;
+}
+.three {
+  position: absolute;
+  top: 47%;
+  left: 95%;
+  padding-right: 3%;
+  text-align: right;
+  color: black;
+}
+.six {
+  position: relative;
+  top: 82%;
+  text-align: center;
+  color: black;
+}
+/*------------FOOTER------------------*/
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(51, 118, 150);
+  color: whitesmoke;
+  text-shadow: 1px 1px black;
+}
+
+.photoCredit {
+  font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+.wes {
+  font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+footer p {
+  color: whitesmoke;
+  margin: 0;
+  font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
