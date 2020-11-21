@@ -53,3 +53,5 @@ function startClock() {
     ).style.transform = `rotate(${currentRotationValue("hour") + 0.00833}deg)`;
   }, 1000);
 }
+
+
